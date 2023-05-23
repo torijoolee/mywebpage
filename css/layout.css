@@ -22,7 +22,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 85px;
+  height: 80px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -38,6 +38,8 @@ img {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--color-purple);
+  opacity: 0.85;
 }
 .gnb-content a + a {
   margin-left: 30px;
@@ -59,13 +61,13 @@ img {
   font-weight: 700;
   font-size: 78px;
   color: #222;
-  margin: 25px 0 40px 0;
+  margin: 30px 0 40px 0;
 }
 .header h2 {
   font-family: "Syne", sans-serif;
   font-size: 28px;
   font-weight: 500;
-  color: var(--color-purple)
+  color: var(--color-purple);
   margin-bottom: 20px;
 }
 
@@ -94,3 +96,88 @@ img {
   margin-left: 12px;
 }
 /* #################### about #################### */
+.about h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-purple);
+}
+.about-content > p {
+  line-height: 38px;
+  font-size: 18px;
+}
+.about-boxes {
+  display: flex;
+  margin-top: 45px;
+}
+.about .box {
+  width: 33.3333%;
+  background-color: #fff;
+}
+.about .box:not(:nth-of-type(1)) {
+  border-left: 5px solid #efeef4;
+}
+.box-inner {
+  padding: 25px 40px;
+}
+.box-inner h3 {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: var(--color-purple);
+  margin-bottom: 25px;
+}
+
+.box p::before {
+  content: "";
+  display: inline-block;
+  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+
+  background-color: var(--color-purple);
+}
+.box-inner p {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.skills-list li {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 5px 10px 5px 0;
+  color: #fff;
+}
+
+.skills-list li:nth-of-type(1) {
+  background-color: #e35027;
+}
+.skills-list li:nth-of-type(2) {
+  background-color: #1472b7;
+}
+.skills-list li:nth-of-type(3) {
+  color: gray;
+  background-color: #f7df2b;
+}
+.skills-list li:nth-of-type(4) {
+  background-color: #30a9fd;
+}
+.skills-list li:nth-of-type(5) {
+  background-color: #ff9a1b;
+}
+.skills-list li:nth-of-type(6) {
+  background-color: #ff62f6;
+}
+.skills-list li:nth-of-type(7) {
+  background-color: #000000;
+}
+.skills-list li:nth-of-type(8) {
+  background-color: #9999fd;
+}
