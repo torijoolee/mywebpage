@@ -72,29 +72,20 @@ section h2 {
   font-size: 28px;
   font-weight: 500;
   color: var(--color-purple);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.header .img-cover {
-  width: 150px;
-  height: 150px;
-  margin-left: -5px;
-}
-.header .img-cover img {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-}
 .header-link {
   display: flex;
 }
 .header-link > a {
   display: flex;
   align-items: center;
+  letter-spacing: 0.6px;
 }
 .header-link a span {
   margin-right: 5px;
-  color: var(--color-purple);
+  color: #9999fd;
 }
 .header-link a + a {
   margin-left: 12px;
@@ -141,7 +132,7 @@ section h2 {
   height: 8px;
   margin-right: 8px;
 
-  background-color: var(--color-purple);
+  background-color: #9999fd;
 }
 .box-inner p {
   display: flex;
@@ -315,9 +306,11 @@ section h2 {
 }
 
 /* #################### section: design #################### */
-
+.design {
+  position: relative;
+}
 .design-inner {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
 }
 .design h2 {
   text-align: center;
@@ -328,6 +321,7 @@ section h2 {
   display: flex;
   justify-content: space-between;
 }
+
 .design-content .item {
   width: calc(100% / 5 - 10px);
   background-color: #fff;
@@ -339,4 +333,79 @@ section h2 {
   height: inherit;
   object-fit: contain;
 }
+.design-btn-wrap .btn {
+  all: unset;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  background-color: transparent;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-purple);
+  cursor: pointer;
+}
+.design-btn-wrap .prev {
+  left: 50px;
+}
+.design-btn-wrap .next {
+  right: 50px;
+}
+.design hr {
+  border: 1px solid #fff;
+  opacity: 0.65;
+}
 /* #################### section: contact #################### */
+.contact-inner {
+  padding: 50px 0;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact-content {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.link-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .link-wrap p {
+  font-family: "Syne", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 12px;
+  text-align: center;
+  opacity: 0.85;
+}
+.qr-code {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* #################### footer #################### */
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #e4e2f0;
+}
+.footer p {
+  line-height: 30px;
+  font-size: 14px;
+}
+.copyright {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 1px;
+}
