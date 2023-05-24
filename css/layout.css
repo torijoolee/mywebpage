@@ -1,6 +1,9 @@
 * {
   font-family: "Pretendard-Regular";
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #efeef4;
 }
@@ -93,6 +96,7 @@ section h2 {
 /* #################### section: about #################### */
 
 .about-content {
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 .about-content > p {
@@ -328,11 +332,11 @@ section h2 {
   height: 220px;
   border-radius: 10px;
 }
-.design-content .item img {
+/* .design-content .item img {
   width: inherit;
   height: inherit;
   object-fit: contain;
-}
+} */
 .design-btn-wrap .btn {
   all: unset;
   position: absolute;
@@ -353,6 +357,20 @@ section h2 {
 }
 .design-btn-wrap .next {
   right: 50px;
+}
+.design-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+.design-dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 2px;
+  background-color: #fff;
 }
 .design hr {
   border: 1px solid #fff;
