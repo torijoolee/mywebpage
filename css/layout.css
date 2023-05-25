@@ -237,10 +237,10 @@ section h2 {
   border-radius: 10px;
   border: 1.5px solid transparent;
   z-index: 1;
-  display: none;
+  display: block;
 }
 .img-item.On {
-  display: block;
+  display: none;
 }
 
 .img-item .item-inner-wrap {
@@ -298,6 +298,9 @@ section h2 {
 .layer-cont p:not(:nth-of-type(1)) {
   margin-bottom: 10px;
   font-size: 15px;
+}
+.layer-cont p:last-of-type {
+  line-height: 22px;
 }
 
 .layer-title {

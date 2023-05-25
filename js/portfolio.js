@@ -7,9 +7,9 @@
     if (filter == null) return;
     for (let i = 0; i < imgWrap.length; i++) {
       if (filter == "*" || filter == imgWrap[i].dataset.type) {
-        imgWrap[i].classList.add("On");
-      } else {
         imgWrap[i].classList.remove("On");
+      } else {
+        imgWrap[i].classList.add("On");
       }
     }
   }

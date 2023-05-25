@@ -28,6 +28,9 @@
   .img-wrap {
     column-count: 2;
   }
+  .layer .layer-cont {
+    width: 85%;
+  }
   /* ect */
   .design-content {
     display: grid;
