@@ -31,6 +31,9 @@
   .layer .layer-cont {
     width: 85%;
   }
+  .img-item {
+    margin-bottom: 10px;
+  }
   /* ect */
   .design-content {
     display: grid;
