@@ -25,13 +25,16 @@ section h2 {
   font-size: 40px;
   color: var(--color-purple);
 }
+.only-mo {
+  display: none;
+}
 /* #################### nav #################### */
 .gnb {
   position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
-  /* background-color: #fff; */
+  z-index: 5;
 }
 
 .gnb-content {
@@ -116,7 +119,9 @@ section h2 {
 }
 
 .box-inner {
-  padding: 25px 40px;
+  padding: 25px 0;
+  width: 85%;
+  margin: auto;
 }
 .box-inner h3 {
   margin: 0;
@@ -255,6 +260,9 @@ section h2 {
   cursor: pointer;
   border: 1.5px solid #9999fd;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img-item:hover .layer {
   opacity: 1;
@@ -282,10 +290,6 @@ section h2 {
   color: var(--color-purple);
 }
 
-.layer-cont span {
-  margin-bottom: 5px;
-  background-color: #222;
-}
 .layer-cont a {
   color: #fff;
   border: 1px solid #efeef4;
@@ -329,14 +333,26 @@ section h2 {
 .design-content .item {
   width: calc(100% / 5 - 10px);
   background-color: #fff;
-  height: 220px;
+  height: 15.2778vw;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
 }
-/* .design-content .item img {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-} */
+.design-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.design-content .item:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
 .design-btn-wrap .btn {
   all: unset;
   position: absolute;
