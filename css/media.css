@@ -92,6 +92,10 @@
     display: none;
   }
   .img-wrap {
-    padding-top: 50px;
+    padding-top: 70px;
+  }
+  /* footer */
+  .footer p {
+    line-height: 25px;
   }
 }
