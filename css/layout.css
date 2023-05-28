@@ -203,6 +203,11 @@ section h2 {
 .portfolio-inner {
   padding: 50px 0 100px 0;
 }
+.portfolio-content {
+  font-size: 0;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
 .btn-wrap button {
   all: unset;
   background-color: #fff;
@@ -228,15 +233,21 @@ section h2 {
 
 .img-wrap {
   padding-top: 100px;
-  column-count: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 .img-item {
   position: relative;
+  width: 100%;
   border-radius: 10px;
   border: 1.5px solid transparent;
   z-index: 1;
-  display: block;
+
+  float: left;
 }
+
 .img-item.On {
   display: none;
 }
@@ -244,6 +255,12 @@ section h2 {
 .img-item .item-inner-wrap {
   width: 100%;
   height: 250px;
+  border-radius: 10px;
+}
+.img-item .item-inner-wrap img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -337,6 +354,7 @@ section h2 {
 /* #################### section: design #################### */
 .design {
   position: relative;
+  clear: both;
 }
 .design-inner {
   padding: 50px 0 100px 0;
