@@ -28,6 +28,10 @@ section h2 {
 .only-mo {
   display: none;
 }
+.gnb-mo {
+  display: none;
+}
+
 /* #################### nav #################### */
 .gnb {
   position: fixed;
