@@ -211,6 +211,13 @@ section h2 {
   font-size: 0;
   letter-spacing: 0;
   word-spacing: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+.portfolio-content.On {
+  opacity: 0;
+  transform: translateY(10px);
 }
 .btn-wrap button {
   all: unset;
