@@ -1,0 +1,28 @@
+/* left to right */
+.ani.left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 1s;
+}
+.ani.left.moving {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* bottpm to top */
+.ani.top {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s;
+}
+.ani.top.moving {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* delay */
+.ani.delay01 {
+  transition-delay: 0.2s;
+}
+.ani.delay02 {
+  transition-delay: 0.4s;
+}
